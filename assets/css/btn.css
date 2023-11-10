@@ -1,0 +1,46 @@
+/* Style pour l'icône burger */
+#openBtn {
+    display: block;
+    text-decoration: none;
+    color: #f0e7e7; /* Couleur du texte */
+    cursor: pointer;
+  }
+  
+  .burger-icon {
+    display: block;
+    width: 30px;
+    height: 20px;
+  }
+  
+  /* Les lignes horizontales de l'icône burger */
+  .burger-icon span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: #3333331d; /* Couleur des lignes */
+    margin: 10px 0; /* Espace entre les lignes */
+    transition: 0.3s; /* Animation fluide des transitions */
+  }
+  
+  /* Style pour masquer la case à cocher */
+  #check {
+    display: none;
+  }
+  
+  /* Style pour le conteneur du bouton lorsqu'il est cliqué */
+  #openBtn:checked + .burger-icon span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  
+  #openBtn:checked + .burger-icon span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #openBtn:checked + .burger-icon span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  
+  
+ 
+  
